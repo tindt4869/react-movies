@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import MoviesList from 'components/MoviesList';
 
 export default class PopularPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   componentDidMount() {
@@ -9,6 +10,13 @@ export default class PopularPage extends React.PureComponent { // eslint-disable
   }
 
   render() {
+    const { loading, error, movies } = this.props;
+    const moviesListProps = {
+      loading,
+      error,
+      movies,
+    };
+
     return (
       <article>
         <Helmet>
@@ -18,9 +26,7 @@ export default class PopularPage extends React.PureComponent { // eslint-disable
         <div className="home-page">
           <section className="centered">
             <h2>Popular Movies</h2>
-            <p>
-              Hello World
-            </p>
+            <MoviesList {...moviesListProps} />
           </section>
         </div>
       </article>

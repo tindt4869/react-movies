@@ -11,8 +11,12 @@ export function* getPopularMovies() {
   const requestURL = `${API_ENDPOINT}/movie/popular?api_key=${API_KEY}`;
 
   try {
-    const movies = yield call(request, requestURL);
-    yield put(popularMoviesLoaded(movies));
+    const response = yield call(request, requestURL);
+
+    if (response) {
+      const movies = response.results;
+      yield put(popularMoviesLoaded(movies));
+    }
   } catch (err) {
     yield put(popularMoviesLoadingError(err));
   }
