@@ -1,0 +1,14 @@
+.nav {
+  background-color: #20232a;
+}
+
+.nav-item {
+  color: hsla(0, 0%, 100%, .5);
+  padding: 0.5rem 1rem;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

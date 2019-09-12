@@ -1,0 +1,3 @@
+export const LOAD_POPULAR_MOVIES = 'movies/Popular/LOAD_POPULAR_MOVIES';
+export const LOAD_POPULAR_MOVIES_SUCCESS = 'movies/Popular/LOAD_POPULAR_MOVIES_SUCCESS';
+export const LOAD_POPULAR_MOVIES_ERROR = 'movies/Popular/LOAD_POPULAR_MOVIES_ERROR';

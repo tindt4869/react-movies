@@ -18,9 +18,7 @@ const List = ({ component, items }) => {
 
   return (
     <div className="list-wrapper">
-      <ul>
-        {content}
-      </ul>
+      {content}
     </div>
   );
 };

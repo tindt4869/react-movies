@@ -1,0 +1,3 @@
+export const LOAD_TOP_RATE_MOVIES = 'movies/TopRate/LOAD_TOP_RATE_MOVIES';
+export const LOAD_TOP_RATE_MOVIES_SUCCESS = 'movies/TopRate/LOAD_TOP_RATE_MOVIES_SUCCESS';
+export const LOAD_TOP_RATE_MOVIES_ERROR = 'movies/TopRate/LOAD_TOP_RATE_MOVIES_ERROR';
