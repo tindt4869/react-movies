@@ -1,0 +1,44 @@
+.input-search-container {
+  display: flex;
+  position: relative;
+  width: 1000px;
+
+  .form-search {
+    display: flex;
+
+    .input {
+      flex: 1;
+      margin: 32px auto;
+      height: 40px;
+      width: 1000px;
+      padding: 8px 16px;
+    }
+  }
+
+  .list-suggestions {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: scroll;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    list-style-type: none;
+
+    &-item {
+      height: 40px;
+      padding: 8px 16px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #f0f0f0;
+      }
+    }
+  }
+}
