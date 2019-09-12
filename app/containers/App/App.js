@@ -6,6 +6,7 @@ import PopularPage from 'containers/PopularPage/Loadable';
 import TopRatePage from 'containers/TopRatePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import SearchResultPage from 'containers/SearchResultPage/Loadable';
+import MovieInfoPage from 'containers/MovieInfoPage/Loadable';
 import './style.scss';
 import Navbar from 'components/Navbar';
 
@@ -24,6 +25,7 @@ const App = () => (
         <Route path="/popular" component={PopularPage} />
         <Route path="/top-rate" component={TopRatePage} />
         <Route path="/search/:query" component={SearchResultPage} />
+        <Route path="/movie/:id" component={MovieInfoPage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
     </div>
