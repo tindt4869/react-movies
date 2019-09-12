@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import MoviesList from 'components/MoviesList';
+import InputSearch from 'containers/InputSearch';
 
 export default class PopularPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   componentDidMount() {
@@ -23,6 +24,7 @@ export default class PopularPage extends React.PureComponent { // eslint-disable
           <title>Home Page</title>
           <meta name="description" content="A React.js Boilerplate application homepage" />
         </Helmet>
+        <InputSearch/>
         <div className="home-page">
           <section className="centered">
             <h2>Popular Movies</h2>

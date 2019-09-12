@@ -32,7 +32,7 @@ export default class InputSearch extends React.Component {
 
   onFocus = () => {
     this.setState({ focused: true });
-  }
+  };
 
   onBlur = () => {
     this.setState({ focused: false });
