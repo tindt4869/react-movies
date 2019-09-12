@@ -1,9 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
-import { Nav } from 'react-bootstrap';
 
 import PopularPage from 'containers/PopularPage/Loadable';
+import TopRatePage from 'containers/TopRatePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import './style.scss';
 import Navbar from 'components/Navbar';
@@ -20,7 +20,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={PopularPage} />
       <Route path="/popular" component={PopularPage} />
-      <Route path="/top-rate" component={NotFoundPage} />
+      <Route path="/top-rate" component={TopRatePage} />
       <Route path="" component={NotFoundPage} />
     </Switch>
   </div>
