@@ -22,7 +22,7 @@ export default class SearchResultPage extends React.PureComponent { // eslint-di
       <article>
         <Helmet>
           <title>Search Result</title>
-          <meta name="description" content="A React.js Boilerplate application homepage" />
+          <meta name="description" content="Search Result page" />
         </Helmet>
         <div className="home-page">
           <section className="centered">

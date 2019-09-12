@@ -1,4 +1,4 @@
-import { LOAD_POPULAR_MOVIES, LOAD_POPULAR_MOVIES_SUCCESS } from './constants';
+import { LOAD_POPULAR_MOVIES, LOAD_POPULAR_MOVIES_ERROR, LOAD_POPULAR_MOVIES_SUCCESS } from './constants';
 
 /**
  * Load popular movies
@@ -34,7 +34,7 @@ export function popularMoviesLoaded(movies) {
  */
 export function popularMoviesLoadingError(error) {
   return {
-    type: LOAD_POPULAR_MOVIES_SUCCESS,
+    type: LOAD_POPULAR_MOVIES_ERROR,
     error,
   };
 }

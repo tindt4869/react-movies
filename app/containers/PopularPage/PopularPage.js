@@ -21,10 +21,10 @@ export default class PopularPage extends React.PureComponent { // eslint-disable
     return (
       <article>
         <Helmet>
-          <title>Home Page</title>
-          <meta name="description" content="A React.js Boilerplate application homepage" />
+          <title>Popular Movies Page</title>
+          <meta name="description" content="Popuplar Movies Page" />
         </Helmet>
-        <InputSearch/>
+        <InputSearch />
         <div className="home-page">
           <section className="centered">
             <h2>Popular Movies</h2>

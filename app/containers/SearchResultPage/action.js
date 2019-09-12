@@ -1,4 +1,8 @@
-import { LOAD_SEARCH_RESULT_MOVIES, LOAD_SEARCH_RESULT_MOVIES_SUCCESS } from './constants';
+import {
+  LOAD_SEARCH_RESULT_MOVIES,
+  LOAD_SEARCH_RESULT_MOVIES_ERROR,
+  LOAD_SEARCH_RESULT_MOVIES_SUCCESS,
+} from './constants';
 
 /**
  * Load search result movies
@@ -15,11 +19,11 @@ export function loadSearchResultMovies(query) {
 }
 
 /**
- * Dispatched when the top rate movies are loaded by the request saga
+ * Dispatched when the search result movies are loaded by the request saga
  *
  * @param  {array} movies The movies data
  *
- * @return {object}      An action object with a type of LOAD_TOP_RATE_MOVIES_SUCCESS passing the repos
+ * @return {object}      An action object with a type of LOAD_SEARCH_RESULT_MOVIES_SUCCESS passing the repos
  */
 export function searchedMoviesLoaded(movies) {
   return {
@@ -29,15 +33,15 @@ export function searchedMoviesLoaded(movies) {
 }
 
 /**
- * Dispatched when loading top rate movies fails
+ * Dispatched when loading search result fails
  *
  * @param  {object} error The error
  *
- * @return {object}      An action object with a type of LOAD_TOP_RATE_MOVIES_ERROR passing the error
+ * @return {object}      An action object with a type of LOAD_SEARCH_RESULT_MOVIES_ERROR passing the error
  */
 export function searchedMoviesLoadingError(error) {
   return {
-    type: LOAD_SEARCH_RESULT_MOVIES_SUCCESS,
+    type: LOAD_SEARCH_RESULT_MOVIES_ERROR,
     error,
   };
 }

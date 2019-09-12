@@ -1,4 +1,4 @@
-import { LOAD_TOP_RATE_MOVIES, LOAD_TOP_RATE_MOVIES_SUCCESS } from './constants';
+import { LOAD_TOP_RATE_MOVIES, LOAD_TOP_RATE_MOVIES_ERROR, LOAD_TOP_RATE_MOVIES_SUCCESS } from './constants';
 
 /**
  * Load top rate movies
@@ -34,7 +34,7 @@ export function topRateMoviesLoaded(movies) {
  */
 export function topRateMoviesLoadingError(error) {
   return {
-    type: LOAD_TOP_RATE_MOVIES_SUCCESS,
+    type: LOAD_TOP_RATE_MOVIES_ERROR,
     error,
   };
 }

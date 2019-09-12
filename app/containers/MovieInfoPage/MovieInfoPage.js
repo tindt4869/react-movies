@@ -41,14 +41,14 @@ export default class MovieInfoPage extends React.Component { // eslint-disable-l
     return (
       <article>
         <Helmet>
-          <title>Search Result</title>
-          <meta name="description" content="A React.js Boilerplate application homepage" />
+          <title>Movie Info</title>
+          <meta name="description" content="Movie Info Page" />
         </Helmet>
         <div className="home-page">
           <section className="centered">
             <Row>
               <Col span={8} offset={1}>
-                <img alt={this.state.name} width='85%' src={`https://image.tmdb.org/t/p/w500${this.state.urlImage}`} />
+                <img alt={this.state.name} width="85%" src={`https://image.tmdb.org/t/p/w500${this.state.urlImage}`} />
               </Col>
               <Col span={12} offset={1}>
                 <h1>{this.state.name}</h1>
@@ -60,7 +60,7 @@ export default class MovieInfoPage extends React.Component { // eslint-disable-l
                   <span className="genereTitle">
                     <strong>Generes: </strong>
                   </span>
-                  {this.state.genres.map(genere => <span className="tag" key={genere.id}>{genere.name}</span>)}
+                  {this.state.genres.map((genere) => <span className="tag" key={genere.id}>{genere.name}</span>)}
                 </div>
                 <hr />
               </Col>
@@ -73,9 +73,5 @@ export default class MovieInfoPage extends React.Component { // eslint-disable-l
 }
 
 MovieInfoPage.propTypes = {
-  loading: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  movies: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
-  loadSearchResultMovies: PropTypes.func,
   match: PropTypes.object,
 };

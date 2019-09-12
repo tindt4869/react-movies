@@ -21,10 +21,10 @@ export default class TopRatePage extends React.PureComponent { // eslint-disable
     return (
       <article>
         <Helmet>
-          <title>Home Page</title>
-          <meta name="description" content="A React.js Boilerplate application homepage" />
+          <title>Top Rated Movies Page</title>
+          <meta name="description" content="Top rated movies page" />
         </Helmet>
-        <InputSearch/>
+        <InputSearch />
         <div className="home-page">
           <section className="centered">
             <h2>Top Rate Movies</h2>
